@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.env.local
+coverage/
+*.log
+.pnpm-store/
+image.png
+xiaoxin.png
+apps/api/prisma/dev.db

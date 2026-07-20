@@ -1,0 +1,15 @@
+{
+  "name": "manyou-shandong",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --parallel -r dev",
+    "build": "pnpm --filter @manyou/web build && echo '前端构建完成'",
+    "start": "tsx apps/api/src/server.ts",
+    "typecheck": "pnpm -r typecheck",
+    "db:generate": "pnpm --filter @manyou/api db:generate",
+    "db:migrate": "pnpm --filter @manyou/api db:migrate",
+    "db:seed": "pnpm --filter @manyou/api db:seed"
+  }
+}
