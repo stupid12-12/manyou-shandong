@@ -5,6 +5,6 @@ dist/
 coverage/
 *.log
 .pnpm-store/
-image.png
-xiaoxin.png
+/image.png
+/xiaoxin.png
 apps/api/prisma/dev.db
