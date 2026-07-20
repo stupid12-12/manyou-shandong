@@ -1,6 +1,6 @@
 import type { LoginInput, ProgressInput, RegisterInput, UserProgress } from '@manyou/shared';
 
-const base = '/api';
+const base = import.meta.env.VITE_API_BASE ?? '/api';
 let accessToken = '';
 
 async function request<T>(path: string, options: RequestInit = {}, retry = true): Promise<T> {
